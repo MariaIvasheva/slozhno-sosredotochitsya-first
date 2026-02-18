@@ -285,6 +285,7 @@
 .images__container {
   --gap: 10px;
 
+  /* display: -webkit-grid; */
   display: grid;
   object-fit: cover;
   object-position: center;
@@ -294,26 +295,31 @@
 .about__sunset-image {
   display: block;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .about__ice-cream-image {
   display: block;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .about__tape-image {
   display: block;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .about__books-image {
   display: block;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .about__street-image {
   display: block;
   inline-size: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -445,6 +451,7 @@
 
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
+    block-size: 100%;
   }
 
   .about__sunset-image {
@@ -455,13 +462,11 @@
   .about__ice-cream-image {
     block-size: 100%;
     grid-row: span 2;
-    object-fit: cover;
   }
 
   .about__tape-image {
     block-size: 100%;
     grid-row: span 2;
-    object-fit: cover;
   }
 
   .about__books-image {
